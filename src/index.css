@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #2b0c10; /* Deep Maroon 950 */
+    font-family: 'Inter', 'Space Grotesk', 'Noto Serif Telugu', sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cinzel', 'Playfair Display', 'Noto Serif Telugu', serif;
+  }
+}
+
+/* Custom premium gold scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d4af37, #b8860b, #d4af37);
+  border-radius: 4px;
+  border: 1px solid #2b0c10;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f4eece;
+}
+
+/* Golden text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff3d1 0%, #e8dc98 30%, #b48c23 70%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold card border */
+.gold-card-border {
+  position: relative;
+}
+
+.gold-card-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(135deg, #b8860b, #f4eece, #b8860b, #e8dc98);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Glassmorphism maroon cards */
+.glass-maroon {
+  background: rgba(43, 12, 16, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-maroon-light {
+  background: rgba(92, 34, 44, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* Custom background pattern overlay */
+.bg-mandala-overlay {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Hide standard audio controls but keep functional */
+.hide-audio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
