@@ -85,7 +85,7 @@ export default function Profiles() {
               <div className="pt-2">
                 <p className="text-xs uppercase tracking-widest text-gold-300/60 mb-1">Family Details • కుటుంబము</p>
                 <p className="text-sm sm:text-base leading-relaxed">
-                  Second Son of the Chilakapati Family.<br />
+                  Our One and Only Son of the Chilakapati Family.<br />
                   Residents of Manjulamma Colony, Y.S.R. Nagar, Nellore.
                 </p>
                 <p className="text-xs text-gold-200/50 mt-1 font-serif">
@@ -139,7 +139,7 @@ export default function Profiles() {
               <div className="pt-2">
                 <p className="text-xs uppercase tracking-widest text-gold-300/60 mb-1">Family Details • కుటుంబము</p>
                 <p className="text-sm sm:text-base leading-relaxed">
-                  Eldest Daughter of the Yammaprasad Family.<br />
+                  Eldest Daughter of the Thummapuri Family.<br />
                   Residents of Kanuparthipadu Village, Nellore Rural Mandal.
                 </p>
                 <p className="text-xs text-gold-200/50 mt-1 font-serif">
